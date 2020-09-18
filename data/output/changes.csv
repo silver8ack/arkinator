@@ -1,4 +1,4 @@
-date,fund,company,ticker,cusip,sharesmarket cap,weight,shares_diff,cap_diff,weight_diff
+date,fund,company,ticker,cusip,shares,market cap,weight,shares_diff,cap_diff,weight_diff
 9/17/2020,ARKK,TESLA INC,TSLA,88160R101,2118645.0,897097852.35,10.68,0.0,0.0,0.0
 9/17/2020,ARKK,INVITAE CORP,NVTA,46185L103,18400984.0,718926444.88,8.56,0.0,0.0,0.0
 9/17/2020,ARKK,SQUARE INC - A,SQ,852234103,3491088.0,508442056.32,6.05,0.0,0.0,0.0

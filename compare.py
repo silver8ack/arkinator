@@ -56,7 +56,7 @@ if __name__ == '__main__':
     tickers = get_tickers(df)
     comp = compare(df, funds, tickers)
     columns = ['date', 'fund', 'company', 'ticker', 
-        'cusip', 'shares' 'market cap', 'weight', 
+        'cusip', 'shares', 'market cap', 'weight', 
         'shares_diff', 'cap_diff', 'weight_diff']
     save_to_file('data/output/changes.csv', columns, comp)
     
