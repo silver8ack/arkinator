@@ -8,7 +8,7 @@ def last_two_files(d):
     for f in os.listdir(d):
         files.append(f"{d}/{f}")
     
-    return sorted(files[-2:], reverse=True)
+    return sorted(files)[-2:]
 
 def get_funds(df):
     return df.fund.unique().tolist()
@@ -49,8 +49,8 @@ def save_to_file(loc, cols, data):
 if __name__ == '__main__':
     file_dir = os.path.join(os.getcwd(), 'data/pkl')
     files = last_two_files(file_dir)
-
-    df = pd.read_pickle(files.pop()).append(pd.read_pickle(files.pop()), ignore_index=True)
+    print("Comparing files:\n  {}".format("\n  ".join(files)))
+    df = pd.read_pickle(files.pop(0)).append(pd.read_pickle(files.pop()), ignore_index=True)
     
     funds = get_funds(df)
     tickers = get_tickers(df)
